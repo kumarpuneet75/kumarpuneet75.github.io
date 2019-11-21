@@ -1,0 +1,15 @@
+.borderblue
+{
+
+    border-style: solid;
+  border-color: blue;
+}
+
+.formbg{
+    background-color:rgba(128, 128, 128, 0.466) ;
+}
+.jumbotron{
+    background-image: url("https://wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
