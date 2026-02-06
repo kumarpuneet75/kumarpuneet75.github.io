@@ -14,18 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
     <title>Valentine Week</title>
 </head>
-<script>
-  const noBtn = document.querySelector('.no');
 
-  noBtn.addEventListener('click', () => {
-    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-
-    noBtn.style.position = 'absolute';
-    noBtn.style.left = `${x}px`;
-    noBtn.style.top = `${y}px`;
-  });
-</script>
 
 <body>
 
@@ -42,5 +31,68 @@
 
     
 </body>
+<script>
+  const noBtn = document.querySelector('.no');
+  const messages = [
+    "Are you sure? 😳",
+    "Think again 💭",
+    "Hey!! 😭",
+    "You missed 😈",
+    "Wait wait 😅",
+    "Wrong choice 💔",
+    "Try again 😉",
+    "Nope 😜",
+    
+  "Are you suuuure? 😳",
+  "Hey! That tickles 😅",
+  "Missed me 😈",
+  "Wait wait wait 😭",
+  "You can’t say no 💘",
+  "That’s illegal 😤",
+  "Try again 😉",
+  "Oops 😜",
+  "Nice try 😏",
+  "Almost got me!",
+  "No is not an option 😌",
+  "I believe in YES 💖",
+  "Come onnn 🥺",
+  "Wrong button 😅",
+  "Error 404: No not found 🚫",
+  "You know you want to 😘",
+  "Just tap YES already 😭",
+  "Stop playing hard to get 😏",
+  "Hehe nope 😜",
+  "Okay but like… why? 🥲",
+  "Think about chocolates 🍫",
+  "Think about hugs 🤗",
+  "Think about love 💞",
+  "Plot twist 😳",
+  "This button is cursed 😈",
+  "Say yes pleaseee 💝",
+  "I’ll wait 💗",
+  "Still no? 🫢",
+  "Heart broken 💔",
+  "Be nice 🥹",
+  "Destiny says YES ✨",
+  "Last chance 😤",
+  "Okay okay… one more try 😅",
+  "Love is calling 📞💘",
+  "Don’t break my heart 😭",
+  "Valentine mode activated 💕",
+  "You’re testing me 😏",
+  "I’m running out of places 😳"
+  ];
 
+  noBtn.addEventListener('touchstart', () => {
+    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+
+    const randomText = messages[Math.floor(Math.random() * messages.length)];
+    noBtn.innerText = randomText;
+
+    noBtn.style.position = 'absolute';
+    noBtn.style.left = `${x}px`;
+    noBtn.style.top = `${y}px`;
+  });
+</script>
 </html>
