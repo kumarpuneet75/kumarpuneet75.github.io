@@ -1,15 +1,83 @@
-.borderblue
-{
 
-    border-style: solid;
-  border-color: blue;
+
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: linear-gradient(
+    135deg,
+    #ff758c,
+    #ff7eb3,
+    #ffd6e8
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+  font-family: 'Fredoka', cursive;
+  overflow: hidden;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.formbg{
-    background-color:rgba(128, 128, 128, 0.466) ;
+.absolute-center {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
 }
-.jumbotron{
-    background-image: url("https://wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-   }
+
+body {
+  margin: 0;
+  font-family: 'Fredoka', cursive;
+}
+
+.valentine-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 80%;
+}
+
+.valentine-text {
+  font-size: 2.2rem;
+  color: #ff4d6d;
+  text-shadow: 2px 2px 0 #ff4d6d;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.yes {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+.no {
+  background-color: #fff;
+  color: #ff4d6d;
+}
+.no {
+  transition: all 0.2s ease;
+}
