@@ -81,3 +81,28 @@ button:hover {
 .no {
   transition: all 0.2s ease;
 }
+/* GIF container styling */
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: #000;
+}
+
+.gif-container img {
+  max-width: 90%;
+  height: auto;
+}
+
+.heart {
+      position: absolute;
+      font-size: 1.5rem;
+      animation: floatUp linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1;}
+      100% { transform: translateY(-120vh) scale(1.5); opacity: 0;}
+    }
